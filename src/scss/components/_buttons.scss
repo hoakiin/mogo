@@ -1,4 +1,5 @@
 .subscribe-btn {
+    display: inline-block;
     width: 133px;
     height: 55px;
     background-color: $color-mint;
@@ -17,6 +18,7 @@
 }
 
 .learn-more-btn {
+    display: inline-flex;
     box-sizing: border-box;
     width: 370px;
     height: 80px;
@@ -25,9 +27,12 @@
     color: $color-white;
     border: 4px solid $color-white;
     text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
 
     &:hover {
         color: #E4BE8D;
+        background-color: $color-white;
     }
 
     &:active {
