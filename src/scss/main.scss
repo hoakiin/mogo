@@ -6,12 +6,12 @@
 @import "base/global";
 
 // === Layout ===
-@import "layout/header-banner";
+@import "layout/header-main";
 @import "layout/footer";
 
 // === Components ===
 @import "components/buttons";
-// @import "components/cards";
+@import "components/line";
 // @import "components/icons";
 // @import "components/slider";
 
