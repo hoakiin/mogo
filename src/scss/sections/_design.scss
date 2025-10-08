@@ -1,0 +1,25 @@
+.design {
+    background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0.8)
+        ),
+        url("../images/design-bg.png") center center / cover no-repeat;
+        // background-attachment: fixed;
+    
+    .head {
+        padding-top: 65px;
+    }
+    
+    &__images {
+        position: relative;
+        display: inline-block; 
+        margin: 59px 0 57px 0;
+    }
+
+    &__phone {
+        position: absolute;  
+        z-index: 2;
+        bottom: -100px;
+        right: 200px;
+    }
+}
