@@ -55,3 +55,40 @@
         }
     }
 }
+
+.futures {
+    background-color: $color-mint;
+    color: $color-white;
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        width: 100%;
+        text-align: center;
+        padding: 55px 0 60px 0;
+        border-left: 1px solid $color-white;
+
+        &:last-child {
+            border-right: 1px solid $color-white;
+        }
+
+        &__num {
+            display: inline-flex;
+            font-size: 59px;
+            font-weight: 700;
+
+            & span {
+                align-items: start;
+            }
+        }
+
+        &__desc {
+            margin-top: 5px;
+            font-size: 23px;
+            font-weight: 500;    
+        }
+    }
+}
