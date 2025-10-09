@@ -31,11 +31,12 @@
             }
 
             &:hover .overlay {
-                transform: translate(-15px, -15px);
                 opacity: 1;
             }
 
             .overlay {
+                transform: translate(-15px, -15px);
+
                 a {
                     display: flex;
                     justify-content: center;
