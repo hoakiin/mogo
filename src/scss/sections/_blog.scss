@@ -51,3 +51,22 @@
         }
     }
 }
+
+.blog__banner {
+    padding-bottom: 42px;
+    background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0.9)
+        ),
+        url("../images/blog-banner.png") center center / cover no-repeat;
+        
+    .head {
+        img {
+            margin-top: 46px;
+        }
+
+        h3 {
+            color: $color-brand;
+        }
+    }
+}
