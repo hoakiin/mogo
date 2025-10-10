@@ -1,0 +1,45 @@
+.clients {
+    background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0.9)
+        ),
+        url("../images/clients-bg.png") center center / cover no-repeat;
+        background-attachment: fixed;
+
+    .head {
+        padding-top: 75px;
+    }    
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 60px;
+        padding-bottom: 60px;
+        row-gap: 80px;
+    }
+    
+    &__item {
+        display: flex;
+        gap: 50px;
+        width: 550px;
+
+        &__img {
+            margin-top: 20px;
+        }
+
+        &__title {
+            text-transform: uppercase;
+            margin: 7px 0 20px 0;
+        }
+
+        .line {
+            width: 70px;
+            margin-bottom: 55px;
+        }
+
+        &__text {
+            line-height: 22px;
+        }
+    }
+}
