@@ -1,14 +1,13 @@
-import 'swiper/css';
-import 'swiper/css/navigation';
-
-import { Swiper } from 'swiper';
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
 import { Navigation } from 'swiper/modules';
 
 const swiper = new Swiper('.swiper', {
-  modules: [Navigation], 
+  modules: [Navigation],
+  speed: 600,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.custom-next',
+    prevEl: '.custom-prev',
   },
 });
