@@ -2,10 +2,19 @@
     text-align: center;
     margin-top: 60px;
 
+    @media (max-width: $laptop) {
+        margin-top: 50px;
+    }
+
     p {
         font-size: 30px;
         font-family: $font-h2;
         margin-bottom: 30px;
+
+        @media (max-width: $laptop) {
+            font-size: 24px;
+            margin-bottom: 35px;
+        }
     }
 
     h3 {
@@ -15,4 +24,5 @@
     .line {
         margin: 0 auto;
     }
+
 }
