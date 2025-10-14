@@ -1,8 +1,13 @@
 body {
-  font-family: $font-base;
-  font-size: 18px;
-  line-height: 1.5;
-  color: $color-text;
+    font-family: $font-base;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $color-text;
+
+    @media (max-width: $laptop) {
+        font-size: 14px;
+        line-height: 1.5;
+    }
 }
 
 h1 {
@@ -12,17 +17,30 @@ h1 {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 170px;
+
+    @media (max-width: $laptop) {
+        font-size: 96px;
+        line-height: 1.1;
+    }
 }
 
 h2 {
     font-family: $font-h2;
     font-size: 64px;
+
+    @media (max-width: $laptop) {
+        font-size: 48px;
+    }
 }
 
 h3 {
     font-size: 36px;
     font-weight: 900;
     text-transform: uppercase;
+
+    @media (max-width: $laptop) {
+        font-size: 24px;
+    }
 }
 
 h4 {
@@ -30,4 +48,8 @@ h4 {
     font-weight: 400;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (max-width: $laptop) {
+        font-size: 18px;
+    }
 }
