@@ -1,4 +1,8 @@
 .line {
     width: 170px;
     border-bottom: 4px solid $color-brand;
+
+    @media (max-width: $laptop) {
+        width: 148px;
+    }
 }

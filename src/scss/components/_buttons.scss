@@ -9,6 +9,11 @@
     text-transform: uppercase;
     transition: all .3s ease;
 
+    @media (max-width: $laptop) {
+        width: 146px;
+        height: 37px;
+    }
+
     &:hover {
         background-color: #87D2C4;
     }
@@ -31,6 +36,12 @@
     justify-content: center;
     align-items: center;
     transition: all .3s ease;
+
+    @media (max-width: $laptop) {
+        width: 317px;
+        height: 52px;
+        font-size: 18px;
+    }
 
     &:hover {
         color: #E4BE8D;
