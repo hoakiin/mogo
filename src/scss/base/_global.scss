@@ -2,4 +2,8 @@
 .container {
   width: 1170px;
   margin: 0 auto;
+
+  @media (max-width: $laptop) {
+    width: 998px;
+  }
 }
