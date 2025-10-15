@@ -5,15 +5,43 @@
         ),
         url("../images/design-bg.png") center center / cover no-repeat;
         background-attachment: fixed;
+
+    @media (max-width: $laptop) {
+        background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0.8)
+        ),
+        url("../images/design-bg-lg.png") center center / cover no-repeat;
+    }
     
     .head {
         padding-top: 65px;
+        @media (max-width: $laptop) {
+            padding-top: 40px;
+        }
     }
     
     &__images {
         position: relative;
         display: inline-block; 
         margin: 59px 0 57px 0;
+
+        @media (max-width: $laptop) {
+            margin: 40px 0 100px 0;
+            padding-bottom: 38px;
+            display: block;
+            text-align: center;
+
+            .design__tablet {
+                img {
+                    height: 356px;
+                }
+            }
+
+            .design__phone img {
+                height: 279px;
+            }
+        }
     }
 
     &__phone {
@@ -21,5 +49,10 @@
         z-index: 2;
         bottom: -100px;
         right: 200px;
+
+        @media (max-width: $laptop) {
+            bottom: -30px;
+            right: 230px;
+        }
     }
 }
