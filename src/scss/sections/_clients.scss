@@ -5,9 +5,21 @@
         ),
         url("../images/clients-bg.png") center center / cover no-repeat;
         background-attachment: fixed;
-
+    @media (max-width: $laptop) {
+        background: 
+        linear-gradient(
+        rgba(255, 255, 255, 0.9)
+        ),
+        url("../images/clients-bg-lg.png") center center / cover no-repeat;
+    }
     .head {
         padding-top: 75px;
+        @media (max-width: $laptop) {
+            padding-top: 40px;
+            p, h3 {
+                margin-bottom: 20px;
+            }
+        }
     }    
 
     &__wrapper {
@@ -17,29 +29,54 @@
         margin-top: 60px;
         padding-bottom: 60px;
         row-gap: 80px;
+        @media (max-width: $laptop) {
+            margin-top: 35px;
+            row-gap: 50px;
+        }
     }
     
     &__item {
         display: flex;
         gap: 50px;
         width: 550px;
+        @media (max-width: $laptop) {
+            width: 455px;
+            gap: 49px;
+        }
 
         &__img {
             margin-top: 20px;
+            @media (max-width: $laptop) {
+                margin-top: 10px; 
+                img {
+                    width: 88px;
+                    height: 88px;
+                }
+            }
         }
 
         &__title {
             text-transform: uppercase;
             margin: 7px 0 20px 0;
+            @media (max-width: $laptop)  {
+                margin: 0 0 18px 0;
+            }
         }
 
         .line {
             width: 70px;
             margin-bottom: 55px;
+            @media (max-width: $laptop) {
+                width: 47px;
+                margin-bottom: 35px;
+            }
         }
 
         &__text {
             line-height: 22px;
+            @media (max-width: $laptop) {
+                line-height: 18px;
+            }
         }
     }
 }
