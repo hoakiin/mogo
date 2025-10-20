@@ -6,18 +6,42 @@
         justify-content: space-between;
         padding: 80px 0 42px 0;
         border-bottom: 1px solid $color-gray;
+
+        @media (max-width: $laptop) {
+            padding: 50px 0 30px 0;
+        }
+
     }
 
 
     &__left {
         width: 370px;
         margin-top: 10px;
+
+        @media (max-width: $laptop) {
+            width: 317px;
+            margin-top: 0px;
+        }
+    }
+
+    &__logo {
+        @media (max-width: $laptop) {
+            img {
+                width: 95px;
+                height: 26px;
+            } 
+        }
     }
 
     &__text {
         color: $color-gray;
         line-height: 22px;
         margin: 35px 0 30px 0;
+
+        @media (max-width: $laptop) {
+            line-height: 18px;
+            margin: 25px 0 20px 0;
+        }
     }
 
     &__followers {
@@ -26,21 +50,38 @@
         font-style: italic;
         margin-bottom: 10px;
 
+        @media (max-width: $laptop) {
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+
         .num {
             font-size: 35px;
             font-weight: 700;
             font-style: normal;
+
+            @media (max-width: $laptop) {
+                font-size: 25px;
+            }
         }
         
         .k {
             font-size: 17px;
             font-style: normal;
+
+            @media (max-width: $laptop) {
+                font-size: 15px;
+            }
         }
     }
 
     &__line {
         width: 370px;
         border-bottom: 1px solid $color-gray;
+
+        @media (max-width: $laptop) {
+            width: 317px;
+        }
     }
 
     &__icons {
@@ -52,6 +93,10 @@
             font-size: 13px;
             font-style: italic;
             color: $color-gray;
+
+            @media (max-width: $laptop) {
+                font-size: 12px;
+            }
         }
 
         &__wrapper {
@@ -60,8 +105,13 @@
 
             a {
                 display: flex;
+
                 img {
                     align-self: center;
+                    @media (max-width: $laptop) {
+                        width: 13px;
+                        height: 13px;
+                    }
                 }
             }
         }
@@ -70,6 +120,10 @@
     form {
         display: flex;
         margin-top: 46px;
+
+        @media (max-width: $laptop) {
+            margin-top: 30px;
+        }
 
         input {
             display: block;
@@ -80,11 +134,21 @@
             border-right: none;
             padding: 20px;
 
+            @media (max-width: $laptop) {
+                width: 181px;
+                height: 37px;
+                padding: 10px;
+            }
+
             &::placeholder {
                 color: $color-gray;
                 font-size: 18px;
                 font-family: $font-base;
                 text-align: center;
+
+                @media (max-width: $laptop) {
+                    font-size: 14px;
+                }
             }
         }
 
@@ -96,6 +160,9 @@
 
     &__center {
         width: 470px;
+        @media (max-width: $laptop) {
+            width: 400px;
+        }
     }
 
     &__items {
@@ -103,25 +170,55 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        @media (max-width: $laptop) {
+            gap: 8px;
+            margin-top: 20px;
+        }
     }
 
     &__item {
         display: flex;
         gap: 30px;
 
+        @media (max-width: $laptop) {
+            gap: 20px;
+        }
+
+        &__img {
+            @media (max-width: $laptop) {
+                img{
+                    width: 115px;
+                    height: 71px;
+                }
+            }
+        }
+
         &__content {
             width: 230px;
+            @media (max-width: $laptop) {
+                width: 267px;
+            }
 
             p:first-child {
                 font-weight: 700;
                 line-height: 20px;
                 text-transform: uppercase;
                 margin-top: 3px;
+
+                @media (max-width: $laptop) {
+                    margin-top: 4px;
+                    line-height: 18px;
+                }
             }
 
             p:last-child {
                 font-size: 13px;
                 margin-top: 10px;
+
+                @media (max-width: $laptop) {
+                    font-size: 12px;
+                }
             }
         }
     }
@@ -130,6 +227,9 @@
 
     &__right {
         width: 270px;
+        @media (max-width: $laptop) {
+            width: 233px;
+        }
 
         a {
             font-size: 13px;
@@ -146,6 +246,19 @@
         margin: 33px 0 20px 0;
         display: grid;
         grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        
+        @media (max-width: $laptop) {
+            margin: 20px 0 10px 0;
+            
+            img {
+                width: 78px;
+                height: 76px;
+            }
+
+            a {
+                margin: 0px 0 20px 0;
+            }
+        }
     }
 
 
@@ -157,6 +270,10 @@
         font-size: 13px;
         font-weight: 700;
         text-transform: uppercase;
+
+        @media (max-width: $laptop) {
+            height: 45px;
+        }
     }
 
 }
