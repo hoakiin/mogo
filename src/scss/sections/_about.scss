@@ -7,6 +7,9 @@
             line-height: 16px;
             margin: 35px 0 90px 0;
         }
+        @media (max-width: $tablet) {
+            margin: 35px 0 70px 0;
+        }
     }
 
     &__items {
@@ -25,6 +28,10 @@
             @media (max-width: $laptop) {
                 width: 320px;
                 height: 282px;
+            }
+            @media (max-width: $tablet) {
+                width: 230px;
+                height: 220px;
             }
         
             &__img {
@@ -71,6 +78,10 @@
             @media (max-width: $laptop) {
                 width: 320px;
                 height: 282px;
+            }
+            @media (max-width: $tablet) {
+                width: 230px;
+                height: 220px;
             }
         }
     }

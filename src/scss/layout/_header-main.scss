@@ -109,6 +109,9 @@
         @media (max-width: $laptop) {
             gap: 20px;
         }
+        @media (max-width: $tablet) {
+            gap: 15px;
+        }
 
     
         a {
@@ -126,7 +129,7 @@
                 font-size: 13px;
                 width: 70px;
             }
-
+            
             &:hover {
                 color: $color-brand-secondary;
                 &::after {
