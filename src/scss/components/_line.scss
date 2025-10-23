@@ -5,4 +5,8 @@
     @media (max-width: $laptop) {
         width: 148px;
     }
+
+    @media (max-width: $tablet) {
+        width: 134px;
+    }
 }
