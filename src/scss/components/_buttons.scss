@@ -43,6 +43,10 @@
         font-size: 18px;
     }
 
+    @media (max-width: $tablet) {
+        width: 284px;
+    }
+
     &:hover {
         color: #E4BE8D;
         background-color: $color-white;
