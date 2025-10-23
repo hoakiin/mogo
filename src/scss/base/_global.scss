@@ -6,4 +6,8 @@
   @media (max-width: $laptop) {
     width: 992px;
   }
+
+  @media (max-width: $tablet) {
+    max-width: 720px;
+  }
 }
