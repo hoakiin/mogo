@@ -12,12 +12,35 @@
             margin-bottom: 70px;
         }
 
+        @media (max-width: $tablet) {
+            grid-column-gap: 60px;
+            grid-row-gap: 70px;
+            margin-top: 70px;
+        }
+
         &__item {
             display: flex;
             gap: 37px;
 
             @media (max-width: $laptop) {
                 gap: 30px;
+            }
+            @media (max-width: $tablet) {
+                gap: 20px;
+            }
+
+            &__icon {
+                @media (max-width: $laptop) {
+                    img {
+                        height: 44px;
+                    }
+                }
+
+                @media (max-width: $tablet) {
+                    img {
+                        height: 30px;
+                    }
+                }
             }
 
             &__text {
@@ -26,11 +49,11 @@
                 p {
                     line-height: 24px;
                     margin-top: 25px;
-                }
-
-                @media (max-width: $laptop) {
-                    p {
+                    @media (max-width: $laptop) {
                         line-height: 18px;
+                    }
+                    @media (max-width: $tablet) {
+                        margin-top: 15px;
                     }
                 }
             }
