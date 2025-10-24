@@ -8,6 +8,9 @@
             margin: 35px 0 70px 0;
             line-height: 16px;
         }
+        @media (max-width: $tablet) {
+            margin: 35px 0 50px 0;
+        }
     }
 
     &__wrapper {
@@ -23,6 +26,14 @@
                 height: 407px;
             }
         }
+
+        @media (max-width: $tablet) {
+            .service__img img {
+                width: 300px;
+                height: 370px;
+                object-fit: cover;
+            }
+        }
     }
 }
 
@@ -32,6 +43,9 @@
 
     @media (max-width: $laptop) {
         width: 486px;
+    }
+    @media (max-width: $tablet)  {
+        width: 400px;
     }
 
     .accordion-item {
@@ -65,6 +79,12 @@
                 }
             }
 
+            @media (max-width: $tablet) {
+                padding: 0 10px;
+                font-size: 16px;
+                height: 65px;
+            }
+
             &:focus {
                 outline: none;
             }
@@ -94,9 +114,11 @@
             transition: max-height 0.3s ease;
             margin-bottom: 10px;
             
-
             .accordion__text {
                 padding: 15px 40px 0 20px;
+                @media (max-width: $tablet) {
+                    padding: 7px 40px 0 20px;
+                }
             }
 
             &::-webkit-scrollbar {
@@ -128,6 +150,10 @@
 
                 @media (max-width: $laptop) {
                     max-height: 139px;
+                }
+
+                @media (max-width: $tablet) {
+                    max-height: 122px;
                 }
             }
         }
