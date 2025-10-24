@@ -42,6 +42,18 @@
                 height: 279px;
             }
         }
+        @media (max-width: $tablet) {
+            margin: 20px 0 0 0;
+            padding-bottom: 30px;
+
+            .design__tablet img {
+                width: 700px;
+            }
+
+            .design__phone img {
+                height: 240px;
+            }
+        }
     }
 
     &__phone {
@@ -53,6 +65,11 @@
         @media (max-width: $laptop) {
             bottom: -30px;
             right: 230px;
+        }
+
+        @media (max-width: $tablet) {
+            bottom: 5px;
+            right: 120px;
         }
     }
 }
