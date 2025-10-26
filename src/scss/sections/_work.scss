@@ -21,6 +21,9 @@
             margin: 26px auto 65px auto;
             width: 790px;
         }
+        @media (max-width: $tablet) {
+            margin: 36px auto 65px auto;
+        }
     }
 
     &__wrapper {
@@ -29,6 +32,9 @@
         grid-template: repeat(2, 1fr) / repeat(4, 1fr);
         @media (max-width: $laptop) {
             margin: 0 auto 60px auto;
+        }
+        @media (max-width: $tablet) {
+            margin: 0 auto 35px auto;
         }
     }
 
@@ -53,12 +59,16 @@
 
         .overlay {
             flex-direction: column;
+            font-size: 13px;
             img {
                 margin-bottom: 60px;
                 @media (max-width: $laptop) {
                     width: 25px;
                     height: 23px;
                     margin: 30px 0 50px 0;
+                }
+                @media (max-width: $tablet) {
+                    margin: 30px 0 20px 0;
                 }
             }
 
@@ -69,6 +79,10 @@
                 margin-bottom: 9px;
                 @media (max-width: $laptop) {
                     font-size: 18px;
+                }
+                @media (max-width: $tablet) {
+                    font-size: 16px;
+                    margin-bottom: 2px;
                 }
             }
         }
