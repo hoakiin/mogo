@@ -12,9 +12,23 @@
             @media (max-width: $laptop) {
                 padding: 28px 0 25px 0;
 
-                .reviews__img img {
-                    width: 115px;
-                    height: 115px;
+                .reviews__img {
+                    img {
+                        width: 115px;
+                        height: 115px;
+                    }
+                }
+            }
+
+            @media (max-width: $tablet) {
+                padding: 28px 0 20px 0;
+
+                .reviews__img {
+                    padding-left: 20px;
+                    img {
+                        width: 100px;
+                        height: 100px;
+                    }
                 }
             }
 
@@ -38,6 +52,12 @@
                     font-size: 18px;
                     line-height: 22px;
                 }
+
+                @media (max-width: $tablet) {
+                    font-size: 16px;
+                    width: 500px;
+                    line-height: 20px;
+                }
             }
 
             .reviews__author {
@@ -48,6 +68,10 @@
                 @media (max-width: $laptop) {
                     gap: 38px;
                     margin-top: 18px;
+                }
+                @media (max-width: $tablet) {
+                    gap: 30px;
+                    margin-top: 10px;
                 }
 
                 .line {
@@ -62,6 +86,9 @@
                     font-family: $font-h2;
                     @media (max-width: $laptop) {
                         font-size: 24px;
+                    }
+                    @media (max-width: $tablet) {
+                        font-size: 20px;
                     }
                 }
             }
